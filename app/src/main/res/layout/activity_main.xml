@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Defines default layout of MainActivity with drawer fragment on start (left) -->
+<android.support.v4.widget.DrawerLayout
+	android:id="@+id/drawer_layout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true">
+
+	<!-- This is static usage of fragment -->
+	<fragment
+		android:id="@+id/fragment_menu"
+		android:name="cz.stambrecht.fragmentexample.MenuFragment"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="start"/>
+
+	<!-- This is container for dynamic fragments. See MainActivity to
+	show how Fragment is inflating -->
+	<FrameLayout
+		android:id="@+id/frameLayout_content"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+</android.support.v4.widget.DrawerLayout>

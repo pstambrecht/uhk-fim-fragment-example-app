@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">Fragment Example App</string>
+	<string name="menu_description">This is menu fragment</string>
+	<string name="content_description">This is content fragment</string>
+</resources>
